@@ -5,7 +5,8 @@
  */
 
 
-
+#define FORWARD 0x01
+#define BACKWARD 0x00
 
 
 void rotateMotor(int steps, char direction); //steps: number of motor steps(impules), direction:CW/CCW
