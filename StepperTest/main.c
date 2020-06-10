@@ -1,8 +1,23 @@
-#include<msp430g2553.h> 
+//******************************************************************************
+//
+//                MSP430G2553
+//             -----------------
+//            |                 |
+//            |                 |
+//            |                 |
+//            |            P2.1/|--> GPIO - STEP
+//            |                 |
+//            |            P2.0/|--> GPIO - DIR
+//            |                 |
+//            |  P1.1-P1.2/RX-TX|<-- PC
+//            |                 |
+//In this demo we will control a Stepper motor linked to A4988 driver.
+//PWM is not used in this certain example instead we are generationg simple GPIO impulses
+//******************************************************************************
 
-/*
- * main.c
- */
+
+
+#include<msp430g2553.h> 
 
 
 #define FORWARD 0x01
