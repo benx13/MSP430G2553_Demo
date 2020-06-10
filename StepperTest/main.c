@@ -9,7 +9,7 @@
 #define BACKWARD 0x00
 
 
-void rotateMotor(int steps, char direction); //steps: number of motor steps(impules), direction:CW/CCW
+void rotateMotor(int steps, int direction); //steps: number of motor steps(impules), direction:CW/CCW
 
 
 
@@ -32,7 +32,7 @@ int main(void)
 	}
 
 
-void rotateMotor(int steps, char direction)
+void rotateMotor(int steps, int direction)
 	{
 	int i=0;
 	if(direction == 1)P2OUT |= 0x01;
